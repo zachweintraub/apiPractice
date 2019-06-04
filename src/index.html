@@ -9,13 +9,29 @@
 <body>
   <body>
       <div class="container">
-        <h1>Get Weather Conditions From Anywhere!</h1>
-        <label for="location">Enter a location:</label>
-        <input id="location" type="text">
-        <button class="btn-success" id="weatherLocation">Get Current Weather</button>
-        <div class="errors"></div>
-        <div class="showHumidity"></div>
-        <div class="showTemp"></div>
+        <div class="weather">
+          <h1>Get Weather Conditions From Anywhere!</h1>
+          <label for="location">Enter a location:</label>
+          <input id="location" type="text">
+          <button class="btn-success" id="weatherLocation">Get Current Weather</button>
+          <div class="errors"></div>
+          <div class="showHumidity"></div>
+          <div class="showTemp"></div>
+        </div>
+        <div class="currency">
+          <h1>Kurrency Korner</h1>
+          <label for="fromAmount">Convert</label>
+          <input class="currencyInput" id="fromAmount">
+          <select id="fromCurrency">
+            <option value="USD">USD</option>
+          </select>
+          <label for="toCurrency">to</label>
+          <select id="toCurrency">
+              <option value="EUR">EUR</option>
+          </select>
+          <div id="currencyResult"></div>
+        </div>
+
       </div>
   </body>
 </html>
